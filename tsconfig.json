@@ -4,7 +4,8 @@
     "inlineSourceMap": true,
     "module": "ES6",
     "target": "ES6",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   },
   "exclude": ["node_modules", "./__tests__/", "**/*.test.ts"]
 }
