@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  a {
+    color: red;
+  }
+}
+
+#id {
+  &:after {
+    position: absolute;
+  }
+  .a & {
+    position: absolute;
+  }
+}
