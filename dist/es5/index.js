@@ -1,27 +1,2 @@
-(function (React, ReactDOM) {
-  'use strict';
-
-  var React__default = 'default' in React ? React['default'] : React;
-
-  const Page = (props) => {
-      let { onBtnClick = () => { } } = props;
-      let [count, setCount] = React.useState(0);
-      return (React__default.createElement("div", null,
-          React__default.createElement("h1", null, count),
-          React__default.createElement("button", { onClick: () => {
-                  setCount(++count);
-                  onBtnClick(count);
-              } }, "click on me")));
-  };
-
-  console.log('app');
-  const App = () => {
-      return (React__default.createElement("div", null,
-          React__default.createElement("h1", null, "this is a app"),
-          React__default.createElement(Page, null)));
-  };
-
-  ReactDOM.render(React.createElement(App, null), document.getElementById("root"));
-
-}(React, ReactDOM));
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VzIjpbXSwic291cmNlc0NvbnRlbnQiOltdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7In0=
+!function(e,t){"use strict";var l="default"in e?e.default:e;const n=()=>{const[t,n]=e.useState(0);return console.log("page 2"),l.createElement("div",null,l.createElement("h1",null,t),l.createElement("button",{onClick:()=>{n(t+1)}},"click on me"))};t.render(e.createElement(()=>l.createElement("div",null,l.createElement("h1",null,"this is a app"),l.createElement(n,null)),null),document.getElementById("root"))}(React,ReactDOM);
+//# sourceMappingURL=index.js.map

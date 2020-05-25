@@ -26,3 +26,4 @@ yarn.lock
 # Temporary env files
 /public/env-config.js
 env-config.js
+__snapshots__

@@ -1,21 +1,16 @@
-import React, { FC, useState } from "react";
-import "./style.css";
+import React, { FC, useState } from 'react';
+import './style.css';
 
-type PageComponentProps = {
-  onBtnClick?: Function;
-};
-
-const Page: FC<PageComponentProps> = (props) => {
-  let { onBtnClick = () => {} } = props;
-  let [count, setCount] = useState(0);
-
+const Page: FC = () => {
+  const [count, setCount] = useState(0);
+  console.log('page 2');
   return (
     <div>
       <h1>{count}</h1>
       <button
         onClick={() => {
-          setCount(++count);
-          onBtnClick(count);
+          const newCount = count + 1;
+          setCount(newCount);
         }}
       >
         click on me

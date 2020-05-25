@@ -1,8 +1,7 @@
-import React, { FC } from "react";
-import Page from "./Page";
-import "./style.css";
+import React, { FC } from 'react';
+import Page from './Page';
+import './style.css';
 
-console.log('app');
 const App: FC = () => {
   return (
     <div>
